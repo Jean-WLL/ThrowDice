@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>擲骰子遊戲</title>
+</head>
+<body>
+    <h1>🎲 擲骰子</h1>
+    <div id="result">點數將顯示在這裡</div>
+    <button onclick="rollDice()">開始擲骰子</button>
+
+    <script>
+        function rollDice() {
+            
+        // 1. 產生 1 到 6 的隨機數
+        let points = Math.floor(Math.random() * 6) + 1;
+
+        // 2. 找到網頁上顯示結果的區塊，並更新文字
+        document.getElementById("result").innerText = "你擲出了：" + points + " 點！";
+    }
+        
+    </script>
+</body>
+</html>
